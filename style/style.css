@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*공통영역 시작*/
+*{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none; 
+}
+ul{
+  list-style: none;  
+}
+li{
+    position: relative;
+}
+div#wrap{
+    width: 700px;
+    margin: 0 auto;
+}
+
+input{
+    border: none;
+}
+input::placeholder{
+    color: #000;
+}
+/*공통영역 끝*/
+/*Guide Line 시작*/
+/*
+div#wrap{border: 1px solid #000;}
+div#join{border: 2px solid #000;}
+div#upperPart{border: 1px solid #f00;}
+div#useAgree{border: 1px solid #f00;}
+div#up14{border: 1px solid #00f;}
+*/
+/*Guide Line 끝*/
+h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 24px 0;
+}
+#join{
+    width: 680px;
+/*    border: 1px solid #00f;*/
+    margin: 0 auto;
+}
+#join #upperPart ul{
+    width: 100%;
+}
+#join #upperPart ul li{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#join #upperPart ul li:not(:last-child){
+    border-bottom: none
+}
+#join #upperPart ul li input{
+    padding:12px;
+}
+#join #upperPart ul li:nth-child(6) select{
+    font-weight: normal;
+    padding: 9px 40px;
+    margin-left: 10px;
+    border-color: #ccc;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/arrow_01.png) no-repeat 100% 50%;
+}
+#join #upperPart ul li:nth-child(6) select option{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#join #upperPart ul li:nth-child(7){
+    display: flex;
+/*    border: 3px solid #000;*/
+}
+#join #upperPart ul li #male,
+#join #upperPart ul li #female{
+    margin: 10px 15px;
+}
+#join #upperPart ul li .btnChk{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 3px 30px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+#useAgree p{
+    margin: 10px 5px;
+}
+#useAgree iframe{
+    width: 680px;
+    
+    border: 1px solid #ccc;
+}
+#up14{
+    padding: 20px 0;
+}
+#up14 label>span{
+    color: #962a2a;
+    margin-left: 5px;
+}
+#up14 pre{
+    color: #888;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px 0;  
+}
+#agreeAll{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+#agreeAll input{
+    margin-left: 2px;
+}
+#info{
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+}
+#info .info{
+    width: 260px;
+    color: #333;
+    padding: 3px 0;
+}
+#info .info input, #info .info label{
+    font-size: 12px;
+}
+#info .info .seeContent{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+#join #submit{
+    color: #fff;
+    font-size: 20px;
+    padding: 16px 30px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h2>회원가입</h2>
+        <form name="frm" action="https://google.com" method = "get"></form>
+        <div id="join">
+            <div id="upperPart">
+                <ul>
+                    <li><input type="text" placeholder="이름" id="uName"></li>
+                    <li><input type="text" placeholder="아이디" id="uID"></li>
+                    <li><input type="password" placeholder="비밀번호" id="uPW"></li>
+                    <li><input type="password" placeholder="비밀번호 확인" id="uPW_Re"></li>
+                    <li><input type="text" placeholder="이메일" id="uEmail"></li>
+                    <li>
+                        <select id="year" onchange="javascript:choose_lastday();">
+                            
+                        </select>
+                        <select id="month" onchange="javascript:choose_lastday();">
+                            <option value="">---</option>
+                        </select>
+                        <select id="day">
+                            
+                        </select>
+                    </li>
+                    <li>
+                        <div id="male">
+                            <input type="radio" id="man"><label for="man"> 남</label>
+                        </div>
+                        <div id="female">
+                            <input type="radio" id="women"><label for="woman"> 여</label>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="휴대폰번호" id="phoneNum">
+                        <button type="button" class="btnChk">인증</button>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="SNS 인증번호" id="snsConfirm">
+                        <button type="button" class="btnChk">확인</button>
+                    </li>
+                </ul>
+            </div>
+            <!--div#upperPart-->
+            <div id="useAgree">
+                <p>이용약관</p>
+                <iframe src="source/memberLicense.html"></iframe>
+            </div>
+            <!--div#useAgree-->
+            <div id="up14">
+                <input type="checkbox" id="check14"><label for="check14"><span>14세 이상입니다. (필수)</span></label>
+                <pre>* 회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수집을 최소화하고<br>   편리한 회원가입을 제공합니다. </pre>
+            </div>
+            <!--div#up14-->
+            <div id="agree">
+                <div id="agreeAll">
+                    <input type="checkbox" id="all" chekced = true>
+                    <label for="all">전체동의</label>
+                </div>
+                <!--div#agreeAll-->
+                <div id="info">
+                    <div id="leftInfo">
+                        <div id="info1" class="info">
+                            <input type="checkbox" id="applyTo3" class="chk" chekced = true>
+                            <label for="applyTo3">이용약관</label>
+                            <button type="button" class="seeContent">내용보기</button>
+                        </div>
+                        <!--div#info1-->
+                        <div id="info2" class="info">
+                            <input type="checkbox" id="personInfo" class="chk" chekced = true>
+                            <label for="personInfo">개인정보 제3차 제공</label>
+                            <button type="button" class="seeContent">내용보기</button>
+                        </div>
+                        <!--div#info2-->
+                    </div>
+                    <!--div#leftInfo-->
+                    <div id="rightInfo">
+                        <div id="info3" class="info">
+                            <input type="checkbox" id="trust" class="chk" chekced = true>
+                            <label for="trust">개인정보 수집및이용안내</label>
+                            <button type="button" class="seeContent">내용보기</button>
+                        </div>
+                        <!--div#info3-->
+                        <div id="info4" class="info">
+                            <input type="checkbox" id="use" class="chk" chekced = true>
+                            <label for="use">개인정보 처리위탁</label>
+                            <button type="button" class="seeContent">내용보기</button>
+                        </div>
+                        <!--div#info4-->
+                    </div>
+                    <!--div#rightInfo-->
+                </div>
+                <!--div#info-->
+            </div>
+            <!--div#agree-->
+            <button type="button" id="submit" onclick="submitFrm()">동의하고 가입완료</button>
+        </div>
+        <!--div#join-->
+        </form>
+    </div>
+</body></html>
