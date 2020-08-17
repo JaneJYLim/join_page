@@ -50,6 +50,7 @@ function submitFrm() {
     let todayYear = today.getFullYear();
     let choose_Year = document.querySelector("#year");
     let choose_Month = document.querySelector("#month");
+
     let index = 0;
     for (let i = 1970; i <= todayYear; i++) {
         choose_Year.options[index] = new Option(i,i);
@@ -69,6 +70,7 @@ function choose_lastday() {
 
     let choose_Day = new Date(new Date(year, month, 1) - 86400000).getDate();
     let dayIdx_Len = day.length;
+    console.log(day);
 
     if (choose_Day > dayIdx_Len) {
         for (let k = (dayIdx_Len + 1); k <= choose_Day; k++) {
@@ -80,8 +82,8 @@ function choose_lastday() {
         }
     }
 }
-
-//전체선택, 전체해제
+    
+//전체선택
 let chkAll = document.querySelector("#all");
 chkAll.addEventListener("click", function(){
     let chk = document.querySelectorAll(".chk");
@@ -90,6 +92,7 @@ chkAll.addEventListener("click", function(){
     };
 }, false);
 
+//전체해제
 let chk = document.querySelectorAll(".chk");
 for (let i = 0; i<chk.length; i++) {
     chk[i].addEventListener("click", function(){

@@ -64,7 +64,7 @@ h2{
 }
 #join #upperPart ul li:nth-child(6) select{
     font-weight: normal;
-    padding: 9px 40px;
+    padding: 9px 60px 9px 10px;
     margin-left: 10px;
     border-color: #ccc;
 
